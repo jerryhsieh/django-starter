@@ -1,0 +1,16 @@
+<html>
+  <head>
+<title>Onion Studio Blog</title>
+</head>
+<body>
+<h1>Onion Studio Blog</h1>
+<h3>Lists of Blog Posts</h3>
+
+<ul>
+  {% for post in posts %}
+  <li><a href="/blog/details/{{post.id}}">{{post.title}}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
